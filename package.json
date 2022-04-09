@@ -1,0 +1,26 @@
+{
+  "name": "express_startkit",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development DEBUG=express_startkit:* nodemon --ext js,ejs,less index.js",
+    "start": "cross-env NODE_ENV=development node index.js",
+    "start:prod": "cross-env NODE_ENV=production node index.js"
+  },
+  "dependencies": {
+    "connect-livereload": "^0.6.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "ejs": "~2.6.1",
+    "express": "~4.16.1",
+    "express-ejs-layouts": "^2.5.1",
+    "http-errors": "~1.6.3",
+    "less-middleware": "~2.2.1",
+    "livereload": "^0.9.3",
+    "morgan": "~1.9.1",
+    "nodemon": "^2.0.15"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}
